@@ -6,44 +6,47 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <title>PCOC Contact Card</title>
+    <link rel="icon" type="image/x-icon" href="church logo.svg">
 </head>
 <body>
-    <div class="container">
-        <form method="post" class="questions">
-            <label>Name</label>
-            <input type="text" name="name"><br>
+    <section>
+        <div class="container">
+            <img src="church logo.svg" alt="church logo" class="logo" width="250px">
+            <div class="left">
+                
+                <h1>the portmore church of christ welcomes you</h1>
+            </div>
+            <div class="right">
+                <h1>we'd like to get to know you</h1>
 
-            <label>Phone Number</label>
-            <input type="tel" name="phone-number" placeholder="(876) XXX-XXXX"><br>
+                <div class="form">
+                    <form action="" method="get">
+                        <div class="div1">
+                            <label for="name">Name</label><br>
+                            <input type="text" required>
+                        </div>
+                        <div class="div2">
+                            <label for="number">Phone Number</label><br>
+                            <input type="tel" name="telephone" id="" required>
+                        </div>
 
-            <label>Email</label>
-            <input type="email" name="email-address"><br>
-
-            <label>Address</label>
-            <input type="text" name="address"><br>
-            
-            <label>Comments</label>
-            <textarea name="comments" id="" cols="30" rows="10"></textarea>
-        </form>    
-        <form class="why">
-            <h2>I'm interested in...</h2>
-
-            <label>Baptism</label>
-            <input type="radio" name="optn1">
-
-
-            <label>Salvation</label>
-            <input type="radio" name="optn2">
-
-
-            <label>Membership</label>
-            <input type="radio" name="optn3">
-        </form>
-    </div>
-    
+                        <div class="div3">
+                            <label for="email">Email Address</label><br>
+                            <input type="email" name="email-address" id="" required>
+                        </div>
+                        
+                        <label for="comments">Comments</label><br>
+                        <textarea name="comments" rows="3" cols="44"></textarea>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        
+    </section>
 </body>
 <script src="main.js"></script>
 </html>
